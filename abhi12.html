@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>Document</title>
+        <style>
+input
+{
+    border: 2px solid blueviolet;
+    background-color: blanchedalmond;
+    
+    text-align: center;
+}
+
+        </style>
+</head>
+<body>
+
+    <input type="button" value="Strings" onclick="check()">
+    <script>
+        function check(){
+            const text1 = 'hello'
+            const text2= 'world'
+            const text3= 'abhishek'
+             const result=text1.concat(' ',text2)
+            document.write(result,"<br>");
+           const result1=text3.trim()
+           document.write(result1,"<br>");
+           const result2=text2.split();
+           document.write(result2,"<br>");
+
+        }
+    </script>
+</body>
+</html>

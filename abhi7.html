@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>
+            uppercase
+        </title>
+        <style>
+            input{
+                border: 4px dashed red;
+            }
+        </style>
+    </head>
+    <body bgcolor="skyblue">
+        name : 
+        <input type="text" id="t1" onchange="change()"><br><br>
+        name :
+        <input type="text" id="t2" onchange="change1()" >
+        <script>
+            function change(){
+                var a= document.getElementById("t1").value;
+                document.getElementById("t1").value=a.toUpperCase();
+            };
+         function   change1(){
+                var a= document.getElementById("t2").value;
+                document.getElementById("t2").value=a.toUpperCase();
+            }
+        </script>
+
+    </body>
+</html>

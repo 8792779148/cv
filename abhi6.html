@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>simple calculator</title>    
+        <style>
+            h1{
+                color: white;
+                background-color:orangered;
+                text-align: center;
+                
+            }
+            FORM{
+                border: 4px SOLID RED;
+                text-align: center;
+                background-color:green;
+            }
+            input{
+                background-color: white;
+                border: 4px solid darkblue;
+              
+            }
+            h2{
+                color: red;
+                
+            }
+
+        </style>    
+            </head>
+    <body>
+        <h1>Simple Calculator</h1>
+        
+            <form>
+                
+        <br><br>
+                first value :
+                 <input type="text" id="t1">
+
+                 <br><br>
+                
+
+
+                second value :
+                <input type="text" id="t2"><br><br>
+            <input type="button"value="add" onclick="add()">
+            <input type="button"value="sub" onclick="sub()">
+            <input type="button"value="mul" onclick="mul()">
+            <input type="button"value="div" onclick="div()">
+            <br><br>
+                           result :
+                <input type="text"  id="t3">
+                <br><br>
+                <br><br>
+                <br><br>
+            
+              
+            <script>
+                function add(){
+                    var a = Number(document.getElementById("t1").value);
+                    var b = Number(document.getElementById("t2").value);
+                    var c=a+b;
+                    document.getElementById("t3").value=c;
+                };
+                function sub(){
+                    var a = Number(document.getElementById("t1").value);
+                    var b = Number(document.getElementById("t2").value);
+                    var c=a-b;
+                    document.getElementById("t3").value=c;
+                };
+                function mul(){
+                    var a = Number(document.getElementById("t1").value);
+                    var b = Number(document.getElementById("t2").value);
+                    var c=a*b;
+                    document.getElementById("t3").value=c;
+                };
+                function div(){
+                    var a = Number(document.getElementById("t1").value);
+                    var b = Number(document.getElementById("t2").value);
+                    var c=a/b;
+                    document.getElementById("t3").value=c;
+                };
+            </script>
+    
+       </form>
+       <p><marquee> <h2>WARNING : If you got answer then leave  website</h2></marquee></p>
+        
+    </body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Enter your Date of Birth :
+        <input type="text" id="t1"><br><br>
+        <input type="button" value="submit" onmouseover="showred()" id="changer" onclick="notify()" onmouseout="showblue()"><br><br>
+        day of born:
+        <input type="text" id="t2">
+    </form>
+    <script>
+        function notify()
+        {
+            alert("hi")
+            var d=document.getElementById("t1").value;
+            var dd=new date(d);
+            switch(dd.getDay())
+            {
+                case 0: alert("born on Sunday");break;
+            case 1: alert("born on Monday");break;       
+            case 2: alert("born on Tuesday");break;
+            case 3: alert("born on Wedensday");break;
+            case 4: alert("born on Thursday");break;
+            case 5: alert("born on Friday");break;
+            case 6: alert("born on Saturday");break;
+            default: alert("invalid number")
+            }
+        }
+    </script>
+    
+</body>
+</html>

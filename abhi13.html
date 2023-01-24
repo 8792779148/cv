@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+   <style>
+    body{
+        background-color: rgb(15, 98, 131);
+        border: 2px solid #e1074c;
+        color: yellow;
+        font-size: medium;
+    }
+   </style>
+</head>
+<body>
+    <h1>Array Example</h1>
+    <script>
+        var stu=[1001,'abhishek','cse',99720967,98.0]
+        document.write("<br><br>")
+        document.write(stu);
+        document.write("<br><br>")
+        for(i in stu)
+        {
+            document.write(stu[i]+"<br>")
+        }
+        document.write("<br>",)
+   
+document.write("<br>"+stu.pop())
+document.write("<br>"+stu.shift())
+document.write("<br>"+stu.push(10))
+document.write("<br>"+stu.unshift(100))
+document.write("<br>"+stu.reverse())
+     
+    </script>
+</body>
+</html>
